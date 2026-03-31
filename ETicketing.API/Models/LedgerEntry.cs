@@ -1,0 +1,17 @@
+﻿namespace ETicketing.API.Models
+{
+    public class LedgerEntry
+    {
+        public int Id { get; set; }
+
+        public int TransactionId { get; set; }
+        public Transaction Transaction { get; set; } = null!;
+
+        public string EntryType { get; set; } = string.Empty; // Debit / Credit
+        public string AccountName { get; set; } = string.Empty;
+        public decimal Amount { get; set; }
+
+        public string Description { get; set; } = string.Empty;
+        public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
+    }
+}

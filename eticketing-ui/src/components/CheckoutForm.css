@@ -1,0 +1,100 @@
+/* الحاوية العامة للصفحة */
+.page-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+  background: linear-gradient(135deg, #ffffff, #e0e6f0);
+  font-family: "Poppins", sans-serif;
+  padding: 40px 20px;
+}
+
+/* الصندوق الأساسي للفورم */
+.checkout-box {
+  background: #ffffff;
+  border-radius: 18px;
+  width: 95%;
+  max-width: 350px; /* ✅ أعرض */
+  padding: 35px 45px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.checkout-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.15);
+}
+
+/* العنوان */
+.checkout-box h2 {
+  text-align: center;
+  color: #005f8a;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.5px;
+}
+
+/* النصوص */
+.checkout-box p {
+  color: #333;
+  margin: 10px 0;
+  font-size: 1rem;
+}
+
+/* الحقول */
+.checkout-box input,
+.checkout-box select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.checkout-box input:focus,
+.checkout-box select:focus {
+  outline: none;
+  border-color: #0077b6;
+  box-shadow: 0 0 6px rgba(0, 119, 182, 0.3);
+}
+
+/* التسميات */
+.checkout-box label {
+  font-weight: 600;
+  color: #444;
+  margin-bottom: 4px;
+  display: inline-block;
+}
+
+/* الزر */
+.checkout-box button {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #0077b6, #0099d5);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.15s ease;
+  margin-top: 15px;
+}
+
+.checkout-box button:hover {
+  background: linear-gradient(135deg, #005f8a, #0077b6);
+  transform: translateY(-2px);
+}
+
+.checkout-box button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* المجموع الكلي */
+.checkout-box strong {
+  color: #000;
+}
