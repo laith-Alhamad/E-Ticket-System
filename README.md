@@ -21,7 +21,7 @@ It simulates a real-world ticket booking and payment system, including:
 * SQL Server
 * React (Frontend)
 * Docker
-* xUnit (Unit Testing)
+
 
 ---
 
