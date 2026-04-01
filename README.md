@@ -160,13 +160,6 @@ docker-compose up --build
 * GET `/api/tickets`
 * POST `/api/checkout`
 
----
-
-## 🧪 Testing
-
-```bash
-dotnet test
-```
 
 ---
 
